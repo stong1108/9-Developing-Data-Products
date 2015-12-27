@@ -1,0 +1,59 @@
+<!doctype HTML>
+<meta charset = 'utf-8'>
+<html>
+  <head>
+    
+    <script src='//ramnathv.github.io/rCharts/libraries/widgets/polycharts/js/polychart2.standalone.js' type='text/javascript'></script>
+    
+    <style>
+    .rChart {
+      display: block;
+      margin-left: auto; 
+      margin-right: auto;
+      width: 800px;
+      height: 400px;
+    }  
+    </style>
+    
+  </head>
+  <body >
+    
+    <div id = 'chart72be3480adcb' class = 'rChart polycharts'></div>    
+    <script type='text/javascript'>
+    var chartParams = {
+ "dom": "chart72be3480adcb",
+"width":    800,
+"height":    400,
+"layers": [
+ {
+ "x": "x",
+"y": "y",
+"data": {
+ "x": [ "North Dakota", "South Dakota", "Iowa", "Minnesota", "Rhode Island", "Maine", "Nebraska" ],
+"y": [    1.4,    1.7,    2.3,    2.3,    2.4,    2.7,    2.9 ] 
+},
+"facet": null,
+"type": "bar" 
+} 
+],
+"facet": [],
+"guides": {
+ "x": {
+ "title": "State" 
+},
+"y": {
+ "title": "Murder" 
+} 
+},
+"coord": [],
+"id": "chart72be3480adcb" 
+}
+    _.each(chartParams.layers, function(el){
+        el.data = polyjs.data(el.data)
+    })
+    var graph_chart72be3480adcb = polyjs.chart(chartParams);
+</script>
+    
+    <script></script>    
+  </body>
+</html>
